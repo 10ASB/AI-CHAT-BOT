@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chatty AI</title>
+
+<style>
+body{
+background:#0f172a;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.chat{
+width:500px;
+height:700px;
+background:#111827;
+border-radius:20px;
+display:flex;
+flex-direction:column;
+overflow:hidden;
+}
+
+.header{
+padding:20px;
+background:#1f2937;
+color:white;
+font-size:24px;
+font-weight:bold;
+}
+
+.messages{
+flex:1;
+padding:20px;
+overflow-y:auto;
+color:white;
+}
+
+.user{
+background:#2563eb;
+padding:10px;
+margin:10px;
+border-radius:15px;
+width:fit-content;
+margin-left:auto;
+}
+
+.bot{
+background:#374151;
+padding:10px;
+margin:10px;
+border-radius:15px;
+width:fit-content;
+}
+
+.bottom{
+display:flex;
+padding:10px;
+}
+
+input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:10px;
+}
+
+button{
+margin-left:10px;
+padding:12px;
+border:none;
+background:#06b6d4;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="chat">
+
+<div class="header">
+🤖 Chatty AI
+</div>
+
+<div class="messages" id="messages"></div>
+
+<div class="bottom">
+<input id="msg" placeholder="Type message">
+<button onclick="sendMessage()">Send</button>
+</div>
+
+</div>
+
+<script>
+
+async function sendMessage(){
+
+let input=document.getElementById("msg");
+let message=input.value;
+
+if(message==="") return;
+
+let chat=document.getElementById("messages");
+
+chat.innerHTML += `
+<div class="user">${message}</div>
+`;
+
+let response = await fetch("/chat",{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+message:message
+})
+});
+
+let data = await response.json();
+
+chat.innerHTML += `
+<div class="bot">${data.reply}</div>
+`;
+
+chat.scrollTop = chat.scrollHeight;
+input.value="";
+}
+
+document.getElementById("msg")
+.addEventListener("keypress",function(e){
+if(e.key==="Enter"){
+sendMessage();
+}
+});
+
+</script>
+
+</body>
+</html>
