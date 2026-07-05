@@ -2,7 +2,6 @@
 
 A simple desktop-based AI chatbot built using Python with a clean GUI interface. Chatty AI can respond to greetings, tell jokes, share fun facts, display the current time/date, provide weather information, and even generate playful flirt responses.
 
-![Chatty AI Screenshot](assets/chatty-ai.png)
 
 ---
 
@@ -22,8 +21,6 @@ A simple desktop-based AI chatbot built using Python with a clean GUI interface.
 ## 📸 Preview
 
 ### Main Interface
-
-![Chatty AI](assets/chatty-ai.png)
 
 ---
 
@@ -115,8 +112,9 @@ GitHub: https://github.com/10ASB
 ## 📸 Application Preview
 
 The screenshot below shows the Chatty AI desktop chatbot interface. Users can interact with the chatbot through predefined commands such as greetings, jokes, fun facts, time/date queries, weather updates, and playful conversations. The application features a modern dark-themed GUI designed for a smooth and user-friendly experience.
+## 📸 Application Preview
 
-<img width="1920" height="1080" alt="Chatty AI Desktop Interface" src="YOUR_IMAGE_LINK" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/82fc89dc-ec4e-4283-a949-355c70e6a814" />
+The screenshot below shows the Chatty AI desktop chatbot interface. Users can interact with the chatbot through predefined commands such as greetings, jokes, fun facts, time/date queries, weather updates, and playful conversations. The application features a modern dark-themed GUI designed for a smooth and user-friendly experience.
 
 
 
