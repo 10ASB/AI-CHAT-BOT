@@ -110,9 +110,8 @@ GitHub: https://github.com/10ASB
 ---
 
 ## 📸 Application Preview
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8a195f2a-dc33-4aa2-b26c-9e9fcc93c9e4" />
 
-The screenshot below shows the Chatty AI desktop chatbot interface. Users can interact with the chatbot through predefined commands such as greetings, jokes, fun facts, time/date queries, weather updates, and playful conversations. The application features a modern dark-themed GUI designed for a smooth and user-friendly experience.
-## 📸 Application Preview
 
 The screenshot below shows the Chatty AI desktop chatbot interface. Users can interact with the chatbot through predefined commands such as greetings, jokes, fun facts, time/date queries, weather updates, and playful conversations. The application features a modern dark-themed GUI designed for a smooth and user-friendly experience.
 
